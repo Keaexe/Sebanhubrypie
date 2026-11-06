@@ -1,0 +1,84 @@
+.profile-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(59, 42, 48, 0.45);
+  z-index: 1100;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.profile-modal {
+  width: 100%;
+  max-width: 400px;
+  max-height: 90vh;
+  overflow-y: auto;
+  background-color: var(--blanc);
+  border-radius: 20px;
+  padding: 25px;
+  box-sizing: border-box;
+}
+
+.profile-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile-top h2 {
+  margin: 0;
+}
+
+.profile-top button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--prune);
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin: 25px 0;
+}
+
+.profile-info input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--separateur);
+  border-radius: 10px;
+  text-align: center;
+  color: var(--prune);
+  box-sizing: border-box;
+}
+
+.save-pseudo {
+  background-color: var(--sakura);
+  border: none;
+  border-radius: 12px;
+  padding: 12px 24px;
+  color: var(--prune);
+  cursor: pointer;
+}
+
+.profile-stats {
+  border-top: 1px solid var(--separateur);
+  padding-top: 15px;
+}
+
+.stat-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 0;
+  font-size: 14px;
+}
+
+.stat-row span:last-child {
+  color: var(--prune-doux);
+  text-align: right;
+}

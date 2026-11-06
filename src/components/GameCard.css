@@ -1,0 +1,67 @@
+.game-card {
+  min-width: 0;
+}
+
+.game-illustration {
+  background-color: var(--petale);
+  border-radius: 22px;
+
+  height: 300px;
+  padding: 22px;
+}
+
+.game-illustration h2 {
+  margin: 0;
+  font-size: 28px;
+  color: var(--prune);
+}
+
+.game-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+
+  padding-top: 15px;
+}
+
+.game-description p {
+  margin: 0 0 6px;
+  color: var(--prune);
+  line-height: 1.5;
+}
+
+.game-description span {
+  font-size: 13px;
+  color: var(--prune-doux);
+}
+
+.play-button {
+  padding: 14px 24px;
+
+  background-color: var(--sakura);
+  color: var(--prune);
+
+  border: none;
+  border-bottom: 2px solid var(--rouge);
+  border-radius: 24px 24px 24px 0;
+
+  font-weight: bold;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.play-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+@media (max-width: 650px) {
+  .game-illustration {
+    height: 220px;
+  }
+
+  .game-illustration h2 {
+    font-size: 24px;
+  }
+}

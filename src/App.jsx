@@ -1,33 +1,43 @@
+import { useState } from 'react'
+
 import './App.css'
+import Header from './components/Header'
+import Footer from './components/Footer'
+import GameGrid from './components/GameGrid'
+import MenuDrawer from './components/MenuDrawer'
+import ProfileModal from './components/ProfileModal'
 
 function App() {
+  const [menuOpen, setMenuOpen] = useState(false)
+  const [profileOpen, setProfileOpen] = useState(false)
+
+  function openProfile() {
+    setMenuOpen(false)
+    setProfileOpen(true)
+  }
+
   return (
     <>
-      <header>
-        <div className="logo">
-          LOGO
-        </div>
-        <button className="settings">
-          Settings
-        </button>
-      </header>
+      <Header
+        onMenuClick={() => setMenuOpen(true)}
+        onProfileClick={openProfile}
+      />
+
+      <MenuDrawer
+        isOpen={menuOpen}
+        onClose={() => setMenuOpen(false)}
+        onProfileClick={openProfile}
+      />
+
+      {profileOpen && (
+        <ProfileModal onClose={() => setProfileOpen(false)} />
+      )}
 
       <main>
-        <div className="games">
-          <div className="game"></div>
-          <div className="game"></div>
-          <div className="game"></div>
-          <div className="game"></div>
-        </div>
+        <GameGrid />
       </main>
 
-      <footer>
-         <p>Sebanhubrypie</p>
-
-        <a href="https://github.com/Sbyspaceopera/Sebanhubrypie">
-          GitHub
-        </a>
-      </footer>
+      <Footer />
     </>
   )
 }

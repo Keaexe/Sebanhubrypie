@@ -1,54 +1,11 @@
-header {
-  position: relative;
-  height: 120px;
 
+#root {
+  min-height: 100vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
-
-  border-bottom: 2px solid black;
+  flex-direction: column;
 }
 
-.settings {
-  position: absolute;
-  right: 30px;
-}
-
-footer {
-  position: relative;
-  height: 80px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  border-top: 2px solid black;
-}
-footer p {
-  font-style: italic;
-}
-
-footer a {
-  position: absolute;
-  right: 30px;
-  font-style: italic;
-}
 main {
+  flex: 1;
   padding: 50px;
-}
-
-.games {
-  display: grid;
-  grid-template-columns: repeat(2, 300px);
-  gap: 50px;
-
-  justify-content: center;
-}
-
-.game {
-  width: 300px;
-  height: 180px;
-
-  border: 2px solid black;
-  border-radius: 20px;
 }

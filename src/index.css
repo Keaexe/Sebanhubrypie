@@ -1,7 +1,27 @@
+
+:root {
+  --blanc: #FFFFFF;
+  --petale: #FDEEF2;
+  --sakura: #F4A7B9;
+  --rouge: #E0453F;
+  --prune: #3B2A30;
+  --prune-doux: #7A6470;
+  --separateur: #F2D9E1;
+
+  font-family: Arial, sans-serif;
+  color: var(--prune);
+  background-color: var(--blanc);
+}
+
 * {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
+  min-width: 320px;
+}
+
+button, a {
+  font: inherit;
 }
