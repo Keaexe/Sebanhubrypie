@@ -1,49 +1,8 @@
-import { useState } from 'react'
-
-import { Outlet, Routes, Route } from 'react-router'
+import { Routes, Route } from 'react-router'
 
 import './App.css'
-import Header from './components/Header'
-import Footer from './components/Footer'
 import GameGrid from './components/GameGrid'
-import MenuDrawer from './components/MenuDrawer'
-import ProfileModal from './components/ProfileModal'
-
-
-function Layout() {
-  const [menuOpen, setMenuOpen] = useState(false)
-  const [profileOpen, setProfileOpen] = useState(false)
-
-  function openProfile() {
-    setMenuOpen(false)
-    setProfileOpen(true)
-  }
-
-  return (
-    <>
-      <Header
-        onMenuClick={() => setMenuOpen(true)}
-        onProfileClick={openProfile}
-      />
-
-      <MenuDrawer
-        isOpen={menuOpen}
-        onClose={() => setMenuOpen(false)}
-        onProfileClick={openProfile}
-      />
-
-      {profileOpen && (
-        <ProfileModal onClose={() => setProfileOpen(false)} />
-      )}
-
-      <main>
-        <Outlet />
-      </main>
-
-      <Footer />
-    </>
-  )
-}
+import Layout from './components/Layout'
 
 export default function App(){
 
