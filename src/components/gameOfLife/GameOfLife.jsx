@@ -196,7 +196,7 @@ export default function GameOfLife() {
   }, []);
 
   return (
-    <>
+    <div className="GoL">
       <Settings
         onSetTps={() => handlersRef.current.setTps?.()}
         onResize={() => handlersRef.current.resize?.()}
@@ -220,6 +220,6 @@ export default function GameOfLife() {
       >
         🌙 / ☀️
       </button>
-    </>
+    </div>
   );
 }

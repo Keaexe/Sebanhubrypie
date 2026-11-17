@@ -674,7 +674,7 @@ export default function CheesyChess() {
   }, []);
 
   return (
-    <>
+    <div className="CheesyChess">
       <button
         id="theme-toggle"
         onClick={() => handlersRef.current.toggleTheme?.()}
@@ -725,6 +725,6 @@ export default function CheesyChess() {
           Highlight last move
         </button>
       </div>
-    </>
+    </div>
   );
 }
