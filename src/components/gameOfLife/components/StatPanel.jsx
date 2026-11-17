@@ -1,6 +1,6 @@
 import "../style.css";
 
-export function StatsPanel() {
+export default function StatsPanel() {
   return (
     <div className="stats-panel">
       <div className="stat-item">

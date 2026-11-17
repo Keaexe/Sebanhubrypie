@@ -1,6 +1,6 @@
 import "../style.css";
 
-export function Controls({ onTick, onPlay, onPause, onReset }) {
+export default function Controls({ onTick, onPlay, onPause, onReset }) {
   return (
     <div className="controls">
       <button id="tickB" onClick={onTick}>

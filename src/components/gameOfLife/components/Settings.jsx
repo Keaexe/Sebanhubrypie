@@ -1,6 +1,6 @@
 import "../style.css";
 
-export function Settings({ onSetTps, onResize }) {
+export default function Settings({ onSetTps, onResize }) {
   return (
     <div className="settings">
       <button className="tps" onClick={onSetTps}>
