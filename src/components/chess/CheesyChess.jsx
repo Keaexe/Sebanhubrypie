@@ -441,7 +441,7 @@ export default function CheesyChess() {
     }
 
     function promotion({ row, column }) {
-      let answer = undefined;
+      let answer;
       do {
         answer = window.prompt(
           "Enter the piece you wanna promote to\n(Q/󰡚, B/󰡜, K/󰡘, R/󰡛)"

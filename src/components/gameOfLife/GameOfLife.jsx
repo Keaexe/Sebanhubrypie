@@ -1,6 +1,9 @@
 // Adaptation of https://github.com/Keaexe/gameOfLife
 import { useEffect, useRef } from "react";
-import {Board, Controls, StatsPanel, Settings} from "./components";
+import Board from "./components/Board";
+import Controls from "./components/Controls"
+import Settings from "./components/Settings"
+import StatsPanel from "./components/StatPanel"
 import "./style.css";
 
 export default function GameOfLife() {
