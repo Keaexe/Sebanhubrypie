@@ -9,7 +9,7 @@ export default function Controls({ onTick, onPlay, onPause, onReset }) {
       <button id="playB" onClick={onPlay}>
         Play
       </button>
-      <button id="pauseB" disabled={true} onClick={onPause}>
+      <button id="pauseB" onClick={onPause}>
         Pause
       </button>
       <button id="resetB" onClick={onReset}>

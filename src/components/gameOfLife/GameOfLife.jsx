@@ -22,6 +22,8 @@ export default function GameOfLife() {
       pauseB = document.getElementById("pauseB");
       continueB = document.getElementById("playB");
 
+      pauseB.disabled = true;
+
       board.innerHTML = "";
       createBoard();
 
@@ -41,6 +43,7 @@ export default function GameOfLife() {
           ) || 15
         );
       }
+      console.log(board);
 
       squares = [];
       for (let i = 0; i < boardSize; i++) {
@@ -57,6 +60,7 @@ export default function GameOfLife() {
           tr.appendChild(squares[i][j]);
         }
       }
+      console.log(squares)
     }
 
     function delBoard() {
@@ -137,6 +141,7 @@ export default function GameOfLife() {
     }
 
     function endContinuousTick() {
+      console.log("Suu")
       clearInterval(intervalID);
       pauseB.disabled = true;
       continueB.disabled = false;

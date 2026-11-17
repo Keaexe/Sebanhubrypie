@@ -15,6 +15,7 @@ export default function App(){
         <Route index element={<GameGrid />} />
         <Route path="snake" element={<h2>Replace by the Snake component</h2>} />
         <Route path="echecs" element={<CheesyChess />} />
+        <Route path="gameOfLife" element={<GameOfLife />} />
         <Route path="dames" element={<h2>Replace by the Gambits component</h2>} />
         <Route path="demineur" element={<MinesweeperLauncher />} />
       </Route>
