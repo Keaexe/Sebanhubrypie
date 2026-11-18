@@ -82,7 +82,7 @@ export default function CheesyChess() {
 
     function surrender() {
       const message =
-        "Êtes vous sûr de vouloir vous rendre ?\nLes(" +
+        "Êtes vous sûr de vouloir vous rendre ?\n(Les " +
         (gameState.toPlay === 0 ? "noirs" : "blancs") +
         " gagnerons)";
       if (window.confirm(message) === true) {
@@ -101,7 +101,7 @@ export default function CheesyChess() {
     function proposeDraw() {
       const message =
         (gameState.toPlay === 0 ? "Les blancs ⬜" : "Les noirs ⬛") +
-        " propose une égalité. Acceptez-vous ?";
+        " proposent une égalité. Acceptez-vous ?";
       if (window.confirm(message) === true) {
         draw();
       }
